@@ -70,8 +70,6 @@ def parse_counters(table: Tag) -> list:
 def parse_item(item: Tag) -> dict:
     item_data = {}
 
-    print(item)
-
     columns = item.find_all("td")
     item_data["name"] = columns[0].find("b").text
 
