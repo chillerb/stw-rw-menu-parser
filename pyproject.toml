@@ -1,5 +1,5 @@
 [project]
-name = "stw-rw-menu-parser"
+name = "mensa-parser"
 version = "1.0.0"
 description = "Get today's menu!"
 readme = "README.md"
@@ -8,3 +8,7 @@ dependencies = [
     "beautifulsoup4>=4.14.3",
     "requests>=2.32.5",
 ]
+
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 import requests
 
 from bs4 import BeautifulSoup
@@ -84,15 +83,6 @@ def parse_item(item: Tag) -> dict:
 
     return item_data
 
-def get_todays_menu(language: Literal["de"] = "de") -> str:
+def get_todays_menu(language: Literal["de"] = "de") -> dict:
     html_doc = get_html(url[language])
     return parse_menu(html_doc)
-
-def main():
-    data = get_todays_menu()
-    print(data)
-
-
-if __name__ == "__main__":
-    main()
-
